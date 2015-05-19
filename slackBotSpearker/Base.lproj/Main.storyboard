@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="22" id="fqc-YP-15N"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-ninja" translatesAutoresizingMaskIntoConstraints="NO" id="Xh9-Sl-Qfw">
@@ -113,6 +113,10 @@
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="confirmSpeakButtonDidTouch:" destination="gK3-ET-54X" eventType="touchUpInside" id="FY2-gg-15w"/>
+                                            <segue destination="zPt-Ro-vHs" kind="unwind" unwindAction="unwindToViewController:" id="Gqu-yK-zID"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOo-na-IGg">
                                         <rect key="frame" x="160" y="0.0" width="160" height="180"/>
@@ -154,7 +158,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOD-Mk-tem" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zPt-Ro-vHs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="685" y="462"/>
+            <point key="canvasLocation" x="1096" y="462"/>
         </scene>
     </scenes>
     <resources>

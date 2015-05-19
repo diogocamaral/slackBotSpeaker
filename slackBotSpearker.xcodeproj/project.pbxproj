@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D901C3BA1B0AADCD00160E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901C3B91B0AADCD00160E95 /* AppDelegate.swift */; };
-		D901C3BD1B0AADCD00160E95 /* slackBotSpearker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D901C3BB1B0AADCD00160E95 /* slackBotSpearker.xcdatamodeld */; };
 		D901C3C21B0AADCD00160E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D901C3C01B0AADCD00160E95 /* Main.storyboard */; };
 		D901C3C41B0AADCD00160E95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D901C3C31B0AADCD00160E95 /* Images.xcassets */; };
 		D901C3C71B0AADCD00160E95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D901C3C51B0AADCD00160E95 /* LaunchScreen.xib */; };
@@ -44,6 +43,8 @@
 		D901C4181B0AB7FE00160E95 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901C3FB1B0AB7FE00160E95 /* TransitionZoom.swift */; };
 		D901C4191B0AB7FE00160E95 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901C3FC1B0AB7FE00160E95 /* UnwindSegue.swift */; };
 		D90419141B0AC1A90053C0D5 /* ConfirmSpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90419131B0AC1A90053C0D5 /* ConfirmSpeakViewController.swift */; };
+		D90419271B0AD11C0053C0D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D904191D1B0ACFA80053C0D5 /* Alamofire.framework */; };
+		D90419281B0AD14A0053C0D5 /* Alamofire.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = D904191D1B0ACFA80053C0D5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +55,61 @@
 			remoteGlobalIDString = D901C3B31B0AADCD00160E95;
 			remoteInfo = slackBotSpearker;
 		};
+		D904191C1B0ACFA80053C0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90419151B0ACFA80053C0D5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		D904191E1B0ACFA80053C0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90419151B0ACFA80053C0D5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		D90419201B0ACFA80053C0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90419151B0ACFA80053C0D5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		D90419221B0ACFA80053C0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90419151B0ACFA80053C0D5 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		D90419241B0AD0770053C0D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90419151B0ACFA80053C0D5 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D90419261B0AD0C90053C0D5 /* Copy Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D90419281B0AD14A0053C0D5 /* Alamofire.framework in Copy Framework */,
+			);
+			name = "Copy Framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D901C3B41B0AADCD00160E95 /* slackBotSpearker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slackBotSpearker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D901C3B81B0AADCD00160E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D901C3B91B0AADCD00160E95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D901C3BC1B0AADCD00160E95 /* slackBotSpearker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = slackBotSpearker.xcdatamodel; sourceTree = "<group>"; };
 		D901C3C11B0AADCD00160E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D901C3C31B0AADCD00160E95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D901C3C61B0AADCD00160E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -99,6 +148,7 @@
 		D901C3FB1B0AB7FE00160E95 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		D901C3FC1B0AB7FE00160E95 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		D90419131B0AC1A90053C0D5 /* ConfirmSpeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSpeakViewController.swift; sourceTree = "<group>"; };
+		D90419151B0ACFA80053C0D5 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90419271B0AD11C0053C0D5 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +176,7 @@
 				D901C3B61B0AADCD00160E95 /* slackBotSpearker */,
 				D901C3CF1B0AADCD00160E95 /* slackBotSpearkerTests */,
 				D901C3B51B0AADCD00160E95 /* Products */,
+				D90419151B0ACFA80053C0D5 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +199,6 @@
 				D901C3C01B0AADCD00160E95 /* Main.storyboard */,
 				D901C3C31B0AADCD00160E95 /* Images.xcassets */,
 				D901C3C51B0AADCD00160E95 /* LaunchScreen.xib */,
-				D901C3BB1B0AADCD00160E95 /* slackBotSpearker.xcdatamodeld */,
 				D901C3B71B0AADCD00160E95 /* Supporting Files */,
 			);
 			path = slackBotSpearker;
@@ -215,6 +266,17 @@
 			path = Spring;
 			sourceTree = "<group>";
 		};
+		D90419161B0ACFA80053C0D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D904191D1B0ACFA80053C0D5 /* Alamofire.framework */,
+				D904191F1B0ACFA80053C0D5 /* Alamofire.framework */,
+				D90419211B0ACFA80053C0D5 /* Alamofire iOS Tests.xctest */,
+				D90419231B0ACFA80053C0D5 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,10 +287,12 @@
 				D901C3B01B0AADCD00160E95 /* Sources */,
 				D901C3B11B0AADCD00160E95 /* Frameworks */,
 				D901C3B21B0AADCD00160E95 /* Resources */,
+				D90419261B0AD0C90053C0D5 /* Copy Framework */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D90419251B0AD0770053C0D5 /* PBXTargetDependency */,
 			);
 			name = slackBotSpearker;
 			productName = slackBotSpearker;
@@ -282,6 +346,12 @@
 			mainGroup = D901C3AB1B0AADCD00160E95;
 			productRefGroup = D901C3B51B0AADCD00160E95 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D90419161B0ACFA80053C0D5 /* Products */;
+					ProjectRef = D90419151B0ACFA80053C0D5 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D901C3B31B0AADCD00160E95 /* slackBotSpearker */,
@@ -289,6 +359,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D904191D1B0ACFA80053C0D5 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = D904191C1B0ACFA80053C0D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D904191F1B0ACFA80053C0D5 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = D904191E1B0ACFA80053C0D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D90419211B0ACFA80053C0D5 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = D90419201B0ACFA80053C0D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D90419231B0ACFA80053C0D5 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = D90419221B0ACFA80053C0D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D901C3B21B0AADCD00160E95 /* Resources */ = {
@@ -347,7 +448,6 @@
 				D901C4111B0AB7FE00160E95 /* SpringButton.swift in Sources */,
 				D901C4101B0AB7FE00160E95 /* SpringAnimation.swift in Sources */,
 				D901C4021B0AB7FE00160E95 /* DesignableImageView.swift in Sources */,
-				D901C3BD1B0AADCD00160E95 /* slackBotSpearker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +466,11 @@
 			isa = PBXTargetDependency;
 			target = D901C3B31B0AADCD00160E95 /* slackBotSpearker */;
 			targetProxy = D901C3CD1B0AADCD00160E95 /* PBXContainerItemProxy */;
+		};
+		D90419251B0AD0770053C0D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = D90419241B0AD0770053C0D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -555,19 +660,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D901C3BB1B0AADCD00160E95 /* slackBotSpearker.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D901C3BC1B0AADCD00160E95 /* slackBotSpearker.xcdatamodel */,
-			);
-			currentVersion = D901C3BC1B0AADCD00160E95 /* slackBotSpearker.xcdatamodel */;
-			path = slackBotSpearker.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D901C3AC1B0AADCD00160E95 /* Project object */;
 }
