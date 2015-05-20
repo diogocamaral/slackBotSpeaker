@@ -11,6 +11,7 @@ import UIKit
 class StoreUrlViewController: UIViewController {
 
     @IBOutlet weak var storeUrlButton: UIButton!
+    @IBOutlet weak var urlTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
