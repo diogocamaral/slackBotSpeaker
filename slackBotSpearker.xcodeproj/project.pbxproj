@@ -42,9 +42,9 @@
 		D901C4171B0AB7FE00160E95 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901C3FA1B0AB7FE00160E95 /* TransitionManager.swift */; };
 		D901C4181B0AB7FE00160E95 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901C3FB1B0AB7FE00160E95 /* TransitionZoom.swift */; };
 		D901C4191B0AB7FE00160E95 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D901C3FC1B0AB7FE00160E95 /* UnwindSegue.swift */; };
-		D90419141B0AC1A90053C0D5 /* ConfirmSpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90419131B0AC1A90053C0D5 /* ConfirmSpeakViewController.swift */; };
 		D90419271B0AD11C0053C0D5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D904191D1B0ACFA80053C0D5 /* Alamofire.framework */; };
 		D90419281B0AD14A0053C0D5 /* Alamofire.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = D904191D1B0ACFA80053C0D5 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9D0F3FE1B0C05DF00B26BDC /* StoreUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0F3FD1B0C05DF00B26BDC /* StoreUrlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,8 +147,8 @@
 		D901C3FA1B0AB7FE00160E95 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		D901C3FB1B0AB7FE00160E95 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		D901C3FC1B0AB7FE00160E95 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
-		D90419131B0AC1A90053C0D5 /* ConfirmSpeakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSpeakViewController.swift; sourceTree = "<group>"; };
 		D90419151B0ACFA80053C0D5 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		D9D0F3FD1B0C05DF00B26BDC /* StoreUrlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreUrlViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +195,7 @@
 				D901C3DE1B0AB7FE00160E95 /* Spring */,
 				D901C3B91B0AADCD00160E95 /* AppDelegate.swift */,
 				D901C3DC1B0AB3EE00160E95 /* MainViewController.swift */,
-				D90419131B0AC1A90053C0D5 /* ConfirmSpeakViewController.swift */,
+				D9D0F3FD1B0C05DF00B26BDC /* StoreUrlViewController.swift */,
 				D901C3C01B0AADCD00160E95 /* Main.storyboard */,
 				D901C3C31B0AADCD00160E95 /* Images.xcassets */,
 				D901C3C51B0AADCD00160E95 /* LaunchScreen.xib */,
@@ -328,6 +328,7 @@
 				TargetAttributes = {
 					D901C3B31B0AADCD00160E95 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8R834N8676;
 					};
 					D901C3CB1B0AADCD00160E95 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -426,11 +427,11 @@
 				D901C4001B0AB7FE00160E95 /* BlurView.swift in Sources */,
 				D901C4191B0AB7FE00160E95 /* UnwindSegue.swift in Sources */,
 				D901C40B1B0AB7FE00160E95 /* LoadingView.swift in Sources */,
-				D90419141B0AC1A90053C0D5 /* ConfirmSpeakViewController.swift in Sources */,
 				D901C4141B0AB7FE00160E95 /* SpringTextField.swift in Sources */,
 				D901C40F1B0AB7FE00160E95 /* Spring.swift in Sources */,
 				D901C3DD1B0AB3EE00160E95 /* MainViewController.swift in Sources */,
 				D901C40E1B0AB7FE00160E95 /* SoundPlayer.swift in Sources */,
+				D9D0F3FE1B0C05DF00B26BDC /* StoreUrlViewController.swift in Sources */,
 				D901C4071B0AB7FE00160E95 /* DesignableView.swift in Sources */,
 				D901C4041B0AB7FE00160E95 /* DesignableTabBarController.swift in Sources */,
 				D901C4011B0AB7FE00160E95 /* DesignableButton.swift in Sources */,
@@ -579,9 +580,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = slackBotSpearker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -589,9 +593,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = slackBotSpearker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
