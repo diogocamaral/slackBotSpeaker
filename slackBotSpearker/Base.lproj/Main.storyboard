@@ -25,9 +25,6 @@
                                 <state key="normal" title="Aperta aqui pra enviar o texto">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="speakButtonDidTouch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jZB-FO-Mrc"/>
                                 </connections>
@@ -224,6 +221,9 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="storeUrlButtonDidTouch:" destination="WxB-ep-k2n" eventType="touchUpInside" id="07x-VV-wkR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94598274128686333" green="0.94598274128686333" blue="0.94598274128686333" alpha="1" colorSpace="calibratedRGB"/>
@@ -275,7 +275,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mw-pR-Pvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Z0a-vJ-1xU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="142" y="1076"/>
+            <point key="canvasLocation" x="192" y="1195"/>
         </scene>
     </scenes>
     <resources>

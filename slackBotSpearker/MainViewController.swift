@@ -18,32 +18,36 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func speakButtonDidTouch(sender: AnyObject) {
-        let parameter = speakTextField.text
-        
         // get url to send message
-        let urlString = "https://gettydata.slack.com/services/hooks/slackbot?token=rtdMpsoM45xZgZ4io88oc5kx&channel=%23general"
-        
-        // transform url string in NSURL object
-        let nsurl = NSURL(string: urlString)!
-        
-        // send a POST with Alamofire to the url with message
-        Alamofire.request(.POST, nsurl, parameters: [:], encoding: .Custom({
-            (convertible, params) in
-            var mutableRequest = convertible.URLRequest.copy() as! NSMutableURLRequest
-            mutableRequest.HTTPBody = parameter.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
-            return (mutableRequest, nil)
-        }))
+        //let urlString = "https://gettydata.slack.com/services/hooks/slackbot?token=rtdMpsoM45xZgZ4io88oc5kx&channel=%23general"
+        let defaults = NSUserDefaults.standardUserDefaults()
+
+        if speakTextField.text == "" {
+            alertMessage("Error to send Message", message: "Message is empty", btnText: "Dismiss")
+        }else if let urlString = defaults.stringForKey("slackUrl") {
+            // transform url string in NSURL object
+            let nsurl = NSURL(string: urlString)!
+
+            // send a POST with Alamofire to the url with message
+            Alamofire.request(.POST, nsurl, parameters: [:], encoding: .Custom({
+                (convertible, params) in
+                var mutableRequest = convertible.URLRequest.copy() as! NSMutableURLRequest
+                mutableRequest.HTTPBody = self.speakTextField.text.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+                return (mutableRequest, nil)
+            }))
+
+            alertMessage("Message Confirmation", message: "Message was sent", btnText: "Dismiss")
+        } else {
+            alertMessage("Error to send Message", message: "Please load an Url", btnText: "Dismiss")
+        }
         
         // empty the text field
         speakTextField.text = ""
-        
-        alertMessage("Message Confirmation", message: "Message was sent", btnText: "Dismiss")
-        
     }
     
     @IBAction func storeUrlButtonDidTouch(sender: AnyObject) {

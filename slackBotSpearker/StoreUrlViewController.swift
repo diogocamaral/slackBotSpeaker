@@ -13,10 +13,19 @@ class StoreUrlViewController: UIViewController {
     @IBOutlet weak var storeUrlButton: UIButton!
     @IBOutlet weak var urlTextView: UITextView!
     
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let urlString = defaults.stringForKey("slackUrl") {
+            urlTextView.text = urlString
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func storeUrlButtonDidTouch(sender: AnyObject) {
+        defaults.setObject(urlTextView.text, forKey: "slackUrl")
     }
     
     // Hide Keyboard

@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
-		<string>../..Alamofire</string>
+		<string>../..Alamofire/</string>
 		<key>8A9F3D71FD8FBDC04E060B5C608EF86431B40D71</key>
 		<string>../..</string>
 	</dict>
@@ -36,17 +36,17 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8A9F3D71FD8FBDC04E060B5C608EF86431B40D71</string>
+			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
 			<key>IDESourceControlWCCName</key>
-			<string>slackBotSpearker</string>
+			<string>Alamofire</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>67620B5EFA902936DF04070AF595B76AB0333747</string>
+			<string>8A9F3D71FD8FBDC04E060B5C608EF86431B40D71</string>
 			<key>IDESourceControlWCCName</key>
-			<string>slackBotSpearkerAlamofire</string>
+			<string>slackBotSpearker</string>
 		</dict>
 	</array>
 </dict>
